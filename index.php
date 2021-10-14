@@ -46,10 +46,8 @@
       <div class="fakeimg">
         <br> 
           <h5>Jhon Alexander Ospino Figueroa</h5>
-          <h5>Fredy Alfonso Rodriguez</h5>
           <h5>Sidney Alfonso Fernandez Yanes</h5>
-          <h5>Deivis Perez</h5>
-          <h5>Ricardo Jose Ariano </h5>
+          
 
       </div>
       <br>
