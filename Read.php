@@ -1,4 +1,3 @@
-
 <?php
 
 
@@ -304,17 +303,6 @@ $listaProduct=$cnsltProduct->fetchALL(PDO::FETCH_ASSOC);
 
 ?>
 
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -342,11 +330,8 @@ $listaProduct=$cnsltProduct->fetchALL(PDO::FETCH_ASSOC);
 
 <form action="" method="post" ectype="multipart/form-data"> 
 <div  class="input-group rounded"  >
-             <input type="search" class="form-control rounded"   autocomplete="off" name="CampoValor" placeholder="Buscar Productos" aria-label="Search"
-             aria-describedby="search-addon" />
                 <span class="input-group-text border-0" id="search-addon" >
- 
-            <a href="read.php"><strong>Read</strong></a>
+
             </span>
             </div>
 </div>
@@ -382,36 +367,12 @@ $listaProduct=$cnsltProduct->fetchALL(PDO::FETCH_ASSOC);
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-      <div class="modal-body">
 
-        <div class="form-row">
-
-            <label for="">Codigo</label>
-            <input class="form-control" type="text" name="txtCodigo" value= "<?php echo $txtCodigo; ?>"  placeholder="" id="txtCodigo" require="" autocomplete="off">
-            <br>
-            <label for="">Nombre:</label>
-            <input class="form-control" type="text" name="txtNombre" value= "<?php echo $txtNombre; ?>" placeholder="" id="txtCodigo" require="" autocomplete="off">
-            <br>
-
-        </div>
-      </div>
-      <div class="modal-footer">
-
-        <button value="btnAgregar"  class="btn btn-success " type="submit" name="accion"> Agregar </button>
-        <button value="btnModificar" class="btn btn-warning " type="submit" name="accion"> Modificar </button>
-        <button value="btnEliminar" class="btn btn-danger " type="submit" name="accion"> Eliminar </button>
-        <button value="btnCancelar" class="btn btn-primary " type="submit" name="accion"> Cancelar </button>
-
-       
-      </div>
+      
     </div>
   </div>
 </div>
 
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Agregar Categoria + 
-</button>
 
        </form> 
 
@@ -503,28 +464,15 @@ $listaProduct=$cnsltProduct->fetchALL(PDO::FETCH_ASSOC);
       </div>
 
 
-      <div class="modal-footer">
-
-        <button value="btnAgregarP"  class="btn btn-success" type="submit" name="ejecutar"> Agregar </button>
-         <button value="btnModificarP" class="btn btn-warning" type="submit" name="ejecutar"> Modificar </button>
-        <button value="btnEliminarP" class="btn btn-danger" type="submit" name="ejecutar"> Eliminar </button>
-        <button value="btnCancelarP" class="btn btn-primary" type="submit" name="ejecutar"> Cancelar </button>
-
-
-
-
-            
-        </div>
+    4
       </div>
       
     </div>
   </div>
 </div>
 
-     <!-- Button trigger modal -->
-     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
-        Agregar Productos + 
-        </button>
+
+  
 
      </form> 
 
@@ -537,58 +485,7 @@ $listaProduct=$cnsltProduct->fetchALL(PDO::FETCH_ASSOC);
  
     
 
-        <!-- tabla que me permite mostrar el contenido de la tabla Categoria Inicio de bloque -->
-       <div class="row">
 
-       
-
-
-
-
-
-
-                <table class="table" name="mostrarTabla"  value="MostrarC" style="display:block">
-                    <thead class ="thead-dark"> 
-                        <tr>
-                            <th scope="col">Codigo Producto</th>
-                            <th scope="col">Nombre Producto</th>
-                            <th scope="col">Acciones</th>
-                        </tr>
-                    </thead>
-
-                    <?php foreach ($listaCtgria as $listaC){ ?>
-                        <tr>
-                            <td> <?php echo $listaC['codigo']; ?> </td>
-                            <td> <?php echo $listaC['nombre']; ?> </td>
-                            <td> 
-                                
-                            <form action ="" method= "post">
-
-                            <input type="hidden" name="txtCodigo" value= "<?php echo $listaC['codigo']; ?>">
-                            <input type="hidden" name="txtNombre" value="<?php echo $listaC['nombre']; ?>">
-
-                        
-                           <input   type="submit" value="Seleccionar" name="accion">
-                          
-                            </form>
-                            </td>
-                            
-                            
-
-                        </tr>
-
-                    <?php } ?>
-
-
-                </table>
-
-
-
-        </div>
-
-
- 
-<!-- tabla que me permite mostrar el contenido de la tabla Categoria Fin de bloque -->
         
 
 

@@ -47,7 +47,7 @@
         <br> 
           <h5>Jhon Alexander Ospino Figueroa</h5>
           <h5>Sidney Alfonso Fernandez Yanes</h5>
-          
+          <h5>Fredy Alfonso Rodriguez Cervantes</h5>
 
       </div>
       <br>
